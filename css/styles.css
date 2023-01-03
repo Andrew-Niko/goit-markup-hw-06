@@ -7,14 +7,14 @@
 /* вторичный цвет фона #F5F4FA; */
 
 :root {
-  --brand-color-accent: #2196f3;
-  --brand-color-header: #000;
+  --brand-color-accent: #4D5AE5;
+  --brand-color-header: #2E2F42;
   --brand-color-footer: #fff;
   --primary-bg-color: #fff;
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
-  --title-text-color: #212121;
-  --primary-text-color: #757575;
+  --title-text-color: #2E2F42;
+  --primary-text-color: #434455;
 }
 
 body {
@@ -67,10 +67,11 @@ img {
 /* NAVIGATION */
 .logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.17;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 
   color: var(--brand-color-header);
   text-decoration: none;
@@ -135,8 +136,8 @@ img {
   margin-left: 93px;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
@@ -155,9 +156,9 @@ img {
   align-items: center;
   margin-left: auto;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
@@ -224,17 +225,16 @@ img {
 
 .hero-title {
   /* padding-top: 200px; */
-  width: 696px;
+  width: 500px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
 
   /* text-align: center; */
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
 
   color: #fff;
 }
@@ -248,7 +248,7 @@ img {
   letter-spacing: 0.06em;
 
   color: #fff;
-  background: #2196f3;
+  background: #4D5AE5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
@@ -259,7 +259,7 @@ img {
 
 .hero-button:hover,
 .hero-button:focus {
-  background: #188ce8;
+  background: #404BBF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -270,22 +270,21 @@ img {
 }
 
 .adv-list .item {
-  width: 270px;
+  width: 264px;
 }
 
 .adv-list .item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 24px;
 }
 
 .adv-section-title {
   margin-top: 0;
   margin-bottom: 10px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 
   color: var(--title-text-color);
 }
@@ -294,9 +293,9 @@ img {
   margin-top: 0;
   margin-bottom: 0;
 
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
@@ -355,9 +354,10 @@ img {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--title-text-color);
 }
 
@@ -370,7 +370,7 @@ img {
 } */
 
 .wwd-list .item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 24px;
 }
 
 .wwd-item-thumb {
@@ -407,7 +407,7 @@ img {
 }
 
 .team-list .item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 24px;
 }
 
 .team-card {
@@ -430,11 +430,11 @@ img {
 }
 
 .link-socials-team {
-  fill: #afb1b8;
+  fill: #F4F4FD;
   display: flex;
   width: 44px;
   height: 44px;
-  background-color: #fff;
+  background-color: var(--brand-color-accent);
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -444,8 +444,8 @@ img {
 
 .link-socials-team:hover,
 .link-socials-team:focus {
-  background-color: var(--brand-color-accent);
-  fill: #fff;
+  background-color: #404BBF;
+  fill: #F4F4FD;
 }
 
 .section-title-team {
@@ -507,21 +507,22 @@ img {
 /* FOOTER */
 .site-footer {
   background-color: var(--footer-bg-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .logo-footer {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.17;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-  color: var(--brand-color-footer);
+  color: #F4F4FD;
   text-decoration: none;
 }
 
@@ -535,7 +536,7 @@ img {
   align-items: baseline;
 }
 
-.footer-address {
+/* .footer-address {
   display: flex;
   flex-wrap: wrap;
   width: 231px;
@@ -572,6 +573,19 @@ img {
 .link-footer-contact:hover,
 .link-footer-contact:focus {
   color: var(--brand-color-accent);
+} */
+
+.footer-text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 264px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #E7E9FC;
+
 }
 
 /* .socials-wrapper {
@@ -590,15 +604,14 @@ img {
 
 .socials-wrapper {
   display: block;
-  margin-left: 156px;
+  margin-left: 269px;
 }
 
 .title-socials {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   margin-bottom: 20px;
 
   color: #ffffff;
@@ -625,12 +638,12 @@ img {
 }
 
 .icon-socials {
-  fill: var(--brand-color-footer);
+  fill: #F4F4FD;
 }
 
 .link-socials:hover,
 .link-socials:focus {
-  background-color: var(--brand-color-accent);
+  background-color: #31D0AA;
 }
 
 /* .item-socials {
@@ -677,11 +690,11 @@ img {
 }
 
 .project-button {
-  padding: 6px 22px;
+  padding: 12px 24px;
 
-  background: var(--secondary-bg-color);
+  background: #F4F4FD;
   border-radius: 4px;
-  border: 0;
+  border: 1px solid #E7E9FC;
 
   font-family: "Roboto";
   font-weight: 500;
@@ -691,7 +704,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--title-text-color);
+  color: var(--brand-color-accent);
   cursor: pointer;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
@@ -701,10 +714,11 @@ img {
 
 .project-button:hover,
 .project-button:focus {
-  background: var(--brand-color-accent);
+  background: #404BBF;
   color: var(--brand-color-footer);
+  border: 1px solid transparent;
 
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
@@ -712,19 +726,19 @@ img {
 .portfolio-flex {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 24px;
 }
 
 .portfolio-wrapper {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  padding: 20px 24px;
+  padding: 32px 16px;
 }
 
 .card-portfolio {
-  /* width: 370px; */
-  flex-basis: calc((100% - 30px * 2) / 3);
+  width: 360px;
+  /* flex-basis: calc((100% - 24px * 2) / 3); */
   background: var(--primary-bg-color);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -737,16 +751,18 @@ img {
 
 .card-portfolio-title {
   margin-bottom: 4px;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
 
 .card-portfolio-text {
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
@@ -761,16 +777,18 @@ img {
 
 .overlay-text {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: var(--primary-bg-color)
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #F4F4FD;
 }
 
 .overlay-text-wrapper {
   position: absolute;
   display: flex;
-  background: rgba(33, 150, 243, 0.9);
+  background: #4D5AE5;
+  background-blend-mode: soft-light;
+  mix-blend-mode: normal;
 
   width: 100%;
   height: 100%;
@@ -780,7 +798,7 @@ img {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  padding: 63px 24px;
+  padding: 40px 32px;
 }
 
 .card-portfolio:hover .overlay-text-wrapper {
